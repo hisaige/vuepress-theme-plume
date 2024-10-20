@@ -5,7 +5,8 @@
       "name": "dev",
       "request": "launch",
       "type": "node-terminal",
-      "command": "pnpm dev"
+      "command": "pnpm dev",
+      "program": "${workspaceFolder}/theme/lib/node/index.js"
     },
     {
       "name": "build",
