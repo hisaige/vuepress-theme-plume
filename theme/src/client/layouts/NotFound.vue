@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import VPNav from '@theme/Nav/VPNav.vue'
+import VPBulletin from '@theme/VPBulletin.vue'
 import VPFooter from '@theme/VPFooter.vue'
 import VPSkipLink from '@theme/VPSkipLink.vue'
 import { useRouteLocale, withBase } from 'vuepress/client'
@@ -60,9 +61,19 @@ const { theme } = useData()
         </div>
       </slot>
     </div>
-    <VPFooter />
+    <VPFooter>
+      <template #footer-content>
+        <slot name="footer-content" />
+      </template>
+    </VPFooter>
     <slot name="layout-bottom" />
   </div>
+
+  <VPBulletin>
+    <template #bulletin-content>
+      <slot name="bulletin-content" />
+    </template>
+  </VPBulletin>
 </template>
 
 <style scoped>
