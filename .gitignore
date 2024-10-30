@@ -14,12 +14,4 @@ dist/
 .mind
 
 coverage/
-.idea/encodings.xml
-.idea/git_toolbox_prj.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/vuepress-theme-plume.iml
-.idea/workspace.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/.gitignore
+.idea
