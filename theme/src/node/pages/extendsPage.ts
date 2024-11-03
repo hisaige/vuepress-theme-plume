@@ -2,6 +2,7 @@ import type { Page } from 'vuepress/core'
 import type { PlumeThemeLocaleOptions, PlumeThemePageData } from '../../shared/index.js'
 import { autoCategory } from './autoCategory.js'
 import { enableBulletin } from './pageBulletin.js'
+import { preparedCustom } from './prepareCustom.js'
 
 export function extendsPageData(
   page: Page<PlumeThemePageData>,
@@ -10,6 +11,7 @@ export function extendsPageData(
   cleanPageData(page)
   autoCategory(page, localeOptions)
   enableBulletin(page, localeOptions)
+  preparedCustom(page)
 }
 
 function cleanPageData(page: Page<PlumeThemePageData>) {
