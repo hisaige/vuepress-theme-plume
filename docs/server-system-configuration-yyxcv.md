@@ -21,7 +21,7 @@ isOriginal: true
 
 ‍
 
-‍
+​![image](assets/image-20241117152415-rooi8z4.png)​
 
 ‍
 
