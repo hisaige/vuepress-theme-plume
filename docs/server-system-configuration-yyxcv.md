@@ -15,6 +15,8 @@ isOriginal: true
 
 # ssh远程端口
 
+​![wyz](assets/wyz-20241117152636-nvyntvz.jpg)​
+
 ‍
 
 ## 常用工具
