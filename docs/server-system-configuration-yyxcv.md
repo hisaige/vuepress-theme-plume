@@ -17,7 +17,7 @@ isOriginal: true
 
 ‍
 
-​![wyz](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/20241118202343.jpg)​
+​![wyz](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/docs/.img/20241118202343.jpg)​
 
 ## 常用工具
 
