@@ -15,7 +15,7 @@ isOriginal: true
 
 # ssh远程端口
 
-​![wyz](assets/wyz-20241117152636-nvyntvz.jpg)​
+​![wyz](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/.img20241118202023.jpg)​
 
 ‍
 
@@ -23,7 +23,7 @@ isOriginal: true
 
 ‍
 
-​![image](assets/image-20241117152415-rooi8z4.png)​
+​![image](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/image-20241117152415-rooi8z4.png)​
 
 ‍
 
