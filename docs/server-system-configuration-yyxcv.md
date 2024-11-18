@@ -15,15 +15,15 @@ isOriginal: true
 
 # ssh远程端口
 
-​![wyz](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/.img20241118202023.jpg)​
-
 ‍
+
+​![wyz](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/20241118202343.jpg)​
 
 ## 常用工具
 
 ‍
 
-​![image](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/images/image-20241117152415-rooi8z4.png)​
+​![image](assets/image-20241117152415-rooi8z4.png)​
 
 ‍
 
