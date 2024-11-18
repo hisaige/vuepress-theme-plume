@@ -23,7 +23,7 @@ isOriginal: true
 
 ‍
 
-​![image](assets/image-20241117152415-rooi8z4.png)​
+​![image](https://raw.githubusercontent.com/hisaige/vuepress-theme-plume/release-hisaige/docs/.img/20241118202835.png)​
 
 ‍
 
