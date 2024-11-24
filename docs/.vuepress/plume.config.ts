@@ -15,7 +15,7 @@ export default defineThemeConfig({
   },
 
   social: [
-    { icon: 'github', link: 'https://github.com/hisaige' },
+    { icon: 'github', link: 'https://github.com' },
     { icon: 'qq', link: 'https://qm.qq.com/q/FbPPoOIscE' },
   ],
   navbarSocialInclude: ['github', 'qq'],
