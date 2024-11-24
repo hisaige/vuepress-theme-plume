@@ -14,6 +14,9 @@ permalink: /config/plugins/markdown-power/
 
 默认配置：
 
+::: code-tabs
+@tab .vuepress/config.ts
+
 ```ts
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
@@ -44,6 +47,8 @@ export default defineUserConfig({
 })
 ```
 
+:::
+
 ## 功能
 
 ### 嵌入 PDF
@@ -70,7 +75,7 @@ __语法:__
 :[collect:name]:
 ```
 
-请查看 [完整使用文档](../../guide/markdown/进阶.md#iconify-图标)
+请查看 [完整使用文档](../../guide/markdown/图标.md)
 
 ### bilibili 视频
 
@@ -142,7 +147,7 @@ __语法:__
 @[caniuse](feature)
 ```
 
-请查看 [完整使用文档](../../guide/markdown/进阶.md#can-i-use)
+请查看 [完整使用文档](../../guide/markdown/caniuse.md)
 
 ### Repl 代码演示容器
 
@@ -206,7 +211,7 @@ __语法:__
 !!content!!
 ```
 
-请查看 [完整使用文档](../../guide/markdown/进阶.md#隐秘文本)
+请查看 [完整使用文档](../../guide/markdown/隐秘文本.md)
 
 ### 文件树
 
@@ -227,7 +232,7 @@ __语法:__
 :::
 ```
 
-请查看 [完整使用文档](../../guide/markdown/进阶.md#文件树)
+请查看 [完整使用文档](../../guide/markdown/文件树.md)
 
 ### 图片尺寸
 

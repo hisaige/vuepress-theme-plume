@@ -16,10 +16,18 @@ export const zhLocale: PlumeThemeLocaleData = {
   contributorsText: '贡献者',
   prevPageLabel: '上一页',
   nextPageLabel: '下一页',
+  lastUpdatedText: '最后更新于',
 
-  lastUpdated: {
-    text: '最后更新于',
-  },
+  changelogText: '变更历史',
+  changelogOnText: '于',
+  changelogButtonText: '查看全部变更历史',
+
+  copyrightText: '版权所有',
+  copyrightAuthorText: '版权归属：',
+  copyrightCreationOriginalText: '本文链接：',
+  copyrightCreationTranslateText: '本文翻译自：',
+  copyrightCreationReprintText: '本文转载自：',
+  copyrightLicenseText: '许可证：',
 
   notFound: {
     code: '404',
@@ -40,11 +48,21 @@ export const zhLocale: PlumeThemeLocaleData = {
 }
 
 export const zhPresetLocale: PresetLocale = {
-  home: '首页',
-  blog: '博客',
-  tag: '标签',
-  archive: '归档',
-  category: '分类',
+  'home': '首页',
+  'blog': '博客',
+  'tag': '标签',
+  'archive': '归档',
+  'category': '分类',
+  'archiveTotal': '{count} 篇',
+
+  // ------ copyright license ------
+  'CC0': 'CC0 1.0 通用',
+  'CC-BY-4.0': '署名 4.0 国际',
+  'CC-BY-NC-4.0': '署名-非商业性 4.0 国际',
+  'CC-BY-NC-SA-4.0': '署名-非商业性-相同方式共享 4.0 国际',
+  'CC-BY-NC-ND-4.0': '署名-非商业性-禁止演绎 4.0 国际',
+  'CC-BY-ND-4.0': '署名-禁止演绎 4.0 国际',
+  'CC-BY-SA-4.0': '署名-相同方式共享 4.0 国际',
 }
 
 export const zhDocsearchLocale: DocSearchLocaleOptions = {
