@@ -1,7 +1,7 @@
 import path from 'node:path'
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enNavbar, zhNavbar } from './navbar.js'
-import { enNotes, zhNotes } from './notes/index.js'
+import { zhNavbar } from './navbar.js'
+import { zhNotes } from './notes/index.js'
 
 export default defineThemeConfig({
   logo: '/plume.png',
@@ -10,28 +10,27 @@ export default defineThemeConfig({
     avatar: '/plume.png',
     name: 'Plume Theme',
     description: 'The Theme for Vuepress 2.0',
-    location: 'GuangZhou, China',
-    organization: 'pengzhanbo',
+    location: 'ShenZhen, China',
+    organization: 'hisaige',
   },
 
   social: [
-    { icon: 'github', link: 'https://github.com/pengzhanbo/vuepress-theme-plume' },
+    { icon: 'github', link: 'https://github.com/hisaige' },
     { icon: 'qq', link: 'https://qm.qq.com/q/FbPPoOIscE' },
   ],
   navbarSocialInclude: ['github', 'qq'],
 
   footer: {
-    copyright: 'Copyright © 2021-present pengzhanbo',
+    message: 'Powered by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    copyright: 'Copyright © 2024-present hisaige'
+      + '<br />'
+      + '<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">琼ICP备2024042404号-1</a>',
   },
 
   locales: {
     '/': {
       notes: zhNotes,
       navbar: zhNavbar,
-    },
-    '/en/': {
-      notes: enNotes,
-      navbar: enNavbar,
     },
   },
 
@@ -45,7 +44,7 @@ export default defineThemeConfig({
   bulletin: {
     layout: 'top-right',
     lifetime: 'always',
-    // title: '🎉 公告 🎉',
+    title: '🎉 公告 🎉',
     contentFile: path.join(__dirname, 'bulletin.md'),
     enablePage: page => page.path === '/guide/features/bulletin/',
   },

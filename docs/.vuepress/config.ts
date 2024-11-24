@@ -11,8 +11,8 @@ export default defineUserConfig({
   source: path.resolve(__dirname, '../'),
   public: path.resolve(__dirname, 'public'),
   locales: {
-    '/': { title: 'Plume 主题', lang: 'zh-CN' },
-    '/en/': { title: 'Plume Theme', lang: 'en-US' },
+    '/': { title: '幻想一夜暴富梦的哈撒给', lang: 'zh-CN' },
+    // '/en/': { title: 'Plume Theme', lang: 'en-US' },
   },
 
   head: [

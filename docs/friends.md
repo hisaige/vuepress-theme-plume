@@ -1,125 +1,17 @@
 ---
 pageLayout: friends
-title: 友情链接
-description: 这里是友情链接的描述文字
+title: 收藏网址
+description:
 permalink: /friends/
 draft: true
 list:
   -
     name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-    socials:
-      -
-        icon: github
-        link: https://github.com/pengzhanbo
-      -
-        icon: twitter
-        link: https://twitter.com/pengzhanbo
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-    socials:
-      -
-        icon: github
-        link: https://github.com/pengzhanbo
-      -
-        icon: twitter
-        link: https://twitter.com/pengzhanbo
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-    socials:
-      -
-        icon: github
-        link: https://github.com/pengzhanbo
-      -
-        icon: twitter
-        link: https://twitter.com/pengzhanbo
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
-    desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-    socials:
-      -
-        icon: github
-        link: https://github.com/pengzhanbo
-      -
-        icon: twitter
-        link: https://twitter.com/pengzhanbo
-  -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
     avatar: https://github.com/pengzhanbo.png
     desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
   -
-    name: pengzhanbo
-    link: https://github.com/pengzhanbo
-    avatar: https://github.com/pengzhanbo.png
+    name: bilibili
+    link: https://www.bilibili.com
+    avatar: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nys3Nzc3Nzc3Nzc3Nys3Nzc1MTc3Nzc3ODc3N//AABEIABwAHAMBEQACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAEBQACAwH/xAAoEAACAgECBQMFAQAAAAAAAAABAgMRBAASBSExQVETMnEGImGBoRT/xAAaAQACAwEBAAAAAAAAAAAAAAAABAEDBgIF/8QAKBEAAQMCBAUFAQAAAAAAAAAAAQACAwQRITFBoRITkdHwBSJRgbEU/9oADAMBAAIRAxEAPwAzhYiMQTHMeRPKlyOBvSJD2Pg8jQ6+a5a0tbU8r3OwAyGpPb5PS68ug9MM7uFv2dAO/hsnmNCmJCscK/aO/cn86zM8z53l7zitpS0sNLEIohYDy61Z6NAGx1OqkyFX1tQpsgsOHHwuA4/+WMLslkWR+7EBSCT+9MzzvnfzHnFK09O2nkMLMrC2903xMdPWxC9OrMA9o1Nurb8e4fOqwFVLO7heBh0wtn+FBcMAyZXEh5Il7QCDfa/HOvnXICaqX8to4dT5sgsmQwZEkRayjVZBH8OosmIzxsDvlY8G4/LgYzwQqjM0vqAs5HOq6Aix+Ndg2VdVRNmeHOOlt9lcfUGSjIHaI7HVqoD2lT+vaBouo/hjN7XxvvfutZ/qTKlO9PTSOz1JercMeZJ7gUOgHbQSVwz0+NuBvfppbIbnNJcriD5WTJPJt3ObO0UNQn44hGwNGiVWdSmFLPnQhSz50IXQToQv/9k=
     desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-groups:
-  -
-    title: 分组 1
-    desc: 自定义颜色
-    list:
-      -
-        name: pengzhanbo
-        link: https://github.com/pengzhanbo
-        avatar: https://github.com/pengzhanbo.png
-        desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-        backgroundColor: rgb(255,153,0)
-        color: rgb(255,255,153)
-        nameColor: rgb(255,255,170)
-        socials:
-          -
-            icon: github
-            link: https://github.com/pengzhanbo
-          -
-            icon: twitter
-            link: https://twitter.com/pengzhanbo
-      -
-        name: pengzhanbo
-        link: https://github.com/pengzhanbo
-        avatar: https://github.com/pengzhanbo.png
-        desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-        backgroundColor: rgb(255,102,102)
-        color: rgb(255,204,204)
-        nameColor: rgb(255,238,238)
-      -
-        name: pengzhanbo
-        link: https://github.com/pengzhanbo
-        avatar: https://github.com/pengzhanbo.png
-        desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-        backgroundColor: rgb(0,153,204)
-        color: rgb(153,238,255)
-        nameColor: rgb(153,255,255)
-  -
-    title: 分组 2
-    desc: 这里是分组 2 的描述文字
-    list:
-      -
-        name: pengzhanbo
-        link: https://github.com/pengzhanbo
-        avatar: https://github.com/pengzhanbo.png
-        desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-      -
-        name: pengzhanbo
-        link: https://github.com/pengzhanbo
-        avatar: https://github.com/pengzhanbo.png
-        desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
 ---

@@ -3,36 +3,18 @@ import { version } from '../../package.json'
 
 export const zhNavbar = defineNavbarConfig([
   {
-    text: '指南',
-    icon: 'icon-park-outline:guide-board',
-    link: '/notes/theme/guide/介绍.md',
-    activeMatch: '^/guide/',
-  },
-  {
-    text: '配置',
-    icon: 'icon-park-outline:setting-two',
-    link: '/notes/theme/config/配置说明.md',
-    activeMatch: '^/config/',
-  },
-  {
     text: '博客',
     link: '/blog/',
     icon: 'material-symbols:article-outline',
     activeMatch: '^/(blog|article)/',
   },
   {
-    text: '案例',
-    link: '/demos/',
-    icon: 'map:wind-surfing',
-  },
-  {
     text: '更多',
     icon: 'icon-park-outline:more-three',
     items: [
       { text: '常见问题', link: '/faq/', icon: 'wpf:faq' },
-      { text: '喝杯奶茶', link: '/sponsor/', icon: 'line-md:coffee-loop' },
       { text: '主题工具', link: '/tools/', icon: 'jam:tools' },
-      { text: '友情链接', link: '/friends/', icon: 'carbon:friendship' },
+      { text: '收藏网址', link: '/friends/', icon: 'carbon:friendship' },
       {
         text: 'Vuepress',
         icon: 'logos:vue',
