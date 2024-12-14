@@ -1,13 +1,14 @@
+import type { SearchPluginOptions } from '@vuepress-plume/plugin-search'
+import type { ShikiPluginOptions } from '@vuepress-plume/plugin-shikiji'
 import type { CommentPluginOptions } from '@vuepress/plugin-comment'
 import type { DocSearchOptions } from '@vuepress/plugin-docsearch'
 import type { MarkdownImagePluginOptions } from '@vuepress/plugin-markdown-image'
+import type { MarkdownIncludePluginOptions } from '@vuepress/plugin-markdown-include'
 import type { MarkdownMathPluginOptions } from '@vuepress/plugin-markdown-math'
 import type { ReadingTimePluginOptions } from '@vuepress/plugin-reading-time'
 import type { SeoPluginOptions } from '@vuepress/plugin-seo'
 import type { SitemapPluginOptions } from '@vuepress/plugin-sitemap'
 import type { WatermarkPluginOptions } from '@vuepress/plugin-watermark'
-import type { SearchPluginOptions } from '@vuepress-plume/plugin-search'
-import type { ShikiPluginOptions } from '@vuepress-plume/plugin-shikiji'
 import type { MarkdownEnhancePluginOptions } from 'vuepress-plugin-md-enhance'
 import type { MarkdownPowerPluginOptions } from 'vuepress-plugin-md-power'
 
@@ -43,13 +44,7 @@ export interface PlumeThemePluginOptions {
    * - `imgSize`, `imgMark`, `imgLazyload`, `figure`, `obsidianImgSize` 已迁移至 `@vuepress/plugin-markdown-image`, 请使用 `plugins.markdownImage` 配置项代替。
    * - `katex`, `mathjax` 已迁移至 `@vuepress/plugin-markdown-math`, 请使用 `plugins.markdownMath` 配置项代替
    */
-  markdownEnhance?:
-    | false
-    | Omit<
-      MarkdownEnhancePluginOptions,
-      'hint' | 'alert' | 'imgSize' | 'imgMark' | 'imgLazyload' | 'figure' | 'obsidianImgSize'
-      | 'katex' | 'mathjax'
-    >
+  markdownEnhance?: false | MarkdownEnhancePluginOptions
 
   markdownPower?: false | MarkdownPowerPluginOptions
 
@@ -68,6 +63,15 @@ export interface PlumeThemePluginOptions {
    * @see https://ecosystem.vuejs.press/zh/plugins/markdown/markdown-math.html
    */
   markdownMath?: false | MarkdownMathPluginOptions
+
+  /**
+   * 是否启用 `@vuepress/plugin-markdown-include` 插件
+   *
+   * @default true
+   *
+   * @see https://ecosystem.vuejs.press/zh/plugins/markdown/markdown-include.html
+   */
+  markdownInclude?: boolean | MarkdownIncludePluginOptions
 
   comment?: false | CommentPluginOptions
 

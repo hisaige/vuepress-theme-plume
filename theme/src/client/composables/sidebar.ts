@@ -148,7 +148,7 @@ function resolveSidebarItems(
       if (link) {
         navLink.link = normalizeLink(_prefix, link)
         const nav = resolveNavLink(navLink.link)
-        navLink.icon = nav.icon
+        navLink.icon = nav.icon || navLink.icon
       }
       const nextPrefix = normalizePrefix(_prefix, prefix || dir)
       if (items === 'auto') {
@@ -156,7 +156,7 @@ function resolveSidebarItems(
         if (!navLink.link && autoHomeData.value[nextPrefix]) {
           navLink.link = normalizeLink(autoHomeData.value[nextPrefix])
           const nav = resolveNavLink(navLink.link)
-          navLink.icon = nav.icon
+          navLink.icon = nav.icon || navLink.icon
         }
       }
       else {
@@ -400,9 +400,10 @@ export function useSidebarControl(item: ComputedRef<ResolvedSidebarItem>): Sideb
     return !!(item.value.items && item.value.items.length)
   })
 
-  watchEffect(() => {
-    collapsed.value = !!(collapsible.value && item.value.collapsed)
-  })
+  watch(() => [collapsible.value, item.value.collapsed], (n, o) => {
+    if (n[0] !== o?.[0] || n[1] !== o?.[1])
+      collapsed.value = !!(collapsible.value && item.value.collapsed)
+  }, { immediate: true })
 
   watch(() => [page.value.path, isActiveLink.value, hasActiveLink.value], () => {
     if (isActiveLink.value || hasActiveLink.value) {

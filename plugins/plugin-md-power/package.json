@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-md-power",
   "type": "module",
-  "version": "1.0.0-rc.118",
+  "version": "1.0.0-rc.120",
   "description": "The Plugin for VuePress 2 - markdown power",
   "author": "pengzhanbo <volodymyr@foxmail.com>",
   "license": "MIT",
@@ -38,7 +38,7 @@
   },
   "peerDependencies": {
     "markdown-it": "^14.0.0",
-    "vuepress": "2.0.0-rc.18"
+    "vuepress": "catalog:"
   },
   "peerDependenciesMeta": {
     "markdown-it": {
@@ -46,23 +46,23 @@
     }
   },
   "dependencies": {
-    "@mdit/plugin-attrs": "^0.13.1",
-    "@mdit/plugin-footnote": "^0.13.1",
-    "@mdit/plugin-mark": "^0.13.1",
-    "@mdit/plugin-sub": "^0.13.1",
-    "@mdit/plugin-sup": "^0.13.1",
-    "@mdit/plugin-tab": "^0.13.2",
-    "@mdit/plugin-tasklist": "^0.13.1",
-    "@vuepress/helper": "2.0.0-rc.60",
-    "@vueuse/core": "^11.3.0",
+    "@mdit/plugin-attrs": "^0.14.0",
+    "@mdit/plugin-footnote": "^0.14.0",
+    "@mdit/plugin-mark": "^0.14.0",
+    "@mdit/plugin-sub": "^0.14.0",
+    "@mdit/plugin-sup": "^0.14.0",
+    "@mdit/plugin-tab": "^0.14.0",
+    "@mdit/plugin-tasklist": "^0.14.0",
+    "@vuepress/helper": "catalog:",
+    "@vueuse/core": "catalog:",
     "image-size": "^1.1.1",
-    "local-pkg": "^0.5.1",
+    "local-pkg": "catalog:",
     "markdown-it-container": "^4.0.0",
-    "nanoid": "^5.0.8",
-    "shiki": "^1.23.1",
-    "tm-grammars": "^1.19.4",
+    "nanoid": "catalog:",
+    "shiki": "^1.24.0",
+    "tm-grammars": "^1.21.0",
     "tm-themes": "^1.9.3",
-    "vue": "^3.5.13"
+    "vue": "catalog:"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2"

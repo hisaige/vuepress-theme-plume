@@ -1,9 +1,9 @@
 import type { App } from 'vuepress'
 import type { Page } from 'vuepress/core'
-import type { PlumeThemeEncrypt, PlumeThemePageData } from '../../shared/index.js'
+import type { EncryptOptions, PlumeThemePageData } from '../../shared/index.js'
 import { isNumber, isString, random, toArray } from '@pengzhanbo/utils'
 import { genSaltSync, hashSync } from 'bcrypt-ts'
-import { createFsCache, type FsCache, hash, logger, resolveContent, writeTemp } from '../utils/index.js'
+import { createFsCache, type FsCache, hash, perfLog, perfMark, resolveContent, writeTemp } from '../utils/index.js'
 
 export type EncryptConfig = readonly [
   boolean, // global
@@ -18,8 +18,8 @@ const separator = ':'
 let contentHash = ''
 let fsCache: FsCache<[string, EncryptConfig]> | null = null
 
-export async function prepareEncrypt(app: App, encrypt?: PlumeThemeEncrypt) {
-  const start = performance.now()
+export async function prepareEncrypt(app: App, encrypt?: EncryptOptions) {
+  perfMark('prepare:encrypt')
 
   if (!fsCache && app.env.isDev) {
     fsCache = createFsCache(app, 'encrypt')
@@ -40,14 +40,12 @@ export async function prepareEncrypt(app: App, encrypt?: PlumeThemeEncrypt) {
 
   fsCache?.write([currentHash, resolvedEncrypt])
 
-  if (app.env.isDebug) {
-    logger.info(`Generate encrypt: ${(performance.now() - start).toFixed(2)}ms`)
-  }
+  perfLog('prepare:encrypt', app.env.isDebug)
 }
 
 const salt = () => genSaltSync(random(8, 16))
 
-function resolveEncrypt(encrypt?: PlumeThemeEncrypt): EncryptConfig {
+function resolveEncrypt(encrypt?: EncryptOptions): EncryptConfig {
   const admin = encrypt?.admin
     ? toArray(encrypt.admin)
       .filter(isStringLike)
@@ -72,7 +70,7 @@ function resolveEncrypt(encrypt?: PlumeThemeEncrypt): EncryptConfig {
   return [encrypt?.global ?? false, separator, admin, keys, rules]
 }
 
-export function isEncryptPage(page: Page<PlumeThemePageData>, encrypt?: PlumeThemeEncrypt) {
+export function isEncryptPage(page: Page<PlumeThemePageData>, encrypt?: EncryptOptions) {
   if (!encrypt)
     return false
 

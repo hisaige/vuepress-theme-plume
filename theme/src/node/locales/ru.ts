@@ -1,6 +1,6 @@
 /** 俄语 */
-import type { DocSearchLocaleOptions } from '@vuepress/plugin-docsearch'
 import type { SearchLocaleOptions } from '@vuepress-plume/plugin-search'
+import type { DocSearchLocaleOptions } from '@vuepress/plugin-docsearch'
 import type { PlumeThemeLocaleData, PresetLocale } from '../../shared/index.js'
 
 export const ruLocale: PlumeThemeLocaleData = {
@@ -37,6 +37,13 @@ export const ruLocale: PlumeThemeLocaleData = {
     linkText: 'Вернуться на главную',
   },
 
+  homeText: 'Главная',
+  blogText: 'Блог',
+  tagText: 'Теги',
+  archiveText: 'Архив',
+  categoryText: 'Категории',
+  archiveTotalText: '{count} статей',
+
   encryptButtonText: 'Подтвердить',
   encryptPlaceholder: 'Введите пароль',
   encryptGlobalText: 'Доступ к сайту только по паролю',
@@ -49,13 +56,6 @@ export const ruLocale: PlumeThemeLocaleData = {
 }
 
 export const ruPresetLocale: PresetLocale = {
-  'home': 'Главная',
-  'blog': 'Блог',
-  'tag': 'Теги',
-  'archive': 'Архив',
-  'category': 'Категории',
-  'archiveTotal': '{count} статей',
-
   // ------ copyright license ------
   'CC0': 'CC0 1.0 Универсальная',
   'CC-BY-4.0': 'Атрибуция 4.0 Международный',

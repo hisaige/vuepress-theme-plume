@@ -1,9 +1,9 @@
 import type { App } from 'vuepress'
 import type {
-  AutoFrontmatter,
   AutoFrontmatterArray,
   AutoFrontmatterMarkdownFile,
   AutoFrontmatterObject,
+  AutoFrontmatterOptions,
   PlumeThemeLocaleOptions,
 } from '../../shared/index.js'
 import { isArray, isEmptyObject, promiseParallel, toArray } from '@pengzhanbo/utils'
@@ -13,7 +13,7 @@ import grayMatter from 'gray-matter'
 import jsonToYaml from 'json2yaml'
 import { fs, hash, path } from 'vuepress/utils'
 import { getThemeConfig } from '../loadConfig/index.js'
-import { logger } from '../utils/index.js'
+import { perfLog, perfMark } from '../utils/index.js'
 import { readMarkdown, readMarkdownList } from './readFile.js'
 import { resolveOptions } from './resolveOptions.js'
 
@@ -36,7 +36,7 @@ let generate: Generate | null = null
 
 export function initAutoFrontmatter(
   localeOptions: PlumeThemeLocaleOptions,
-  autoFrontmatter: AutoFrontmatter = {},
+  autoFrontmatter: AutoFrontmatterOptions = {},
 ) {
   const { include, exclude, frontmatter = {} } = resolveOptions(localeOptions, autoFrontmatter)
 
@@ -88,7 +88,7 @@ export function initAutoFrontmatter(
 }
 
 export async function generateAutoFrontmatter(app: App) {
-  const start = performance.now()
+  perfMark('generate:frontmatter')
   if (!generate)
     return
 
@@ -109,9 +109,7 @@ export async function generateAutoFrontmatter(app: App) {
 
   await generate.updateCache(app)
 
-  if (app.env.isDebug) {
-    logger.info(`Generate auto frontmatter: ${(performance.now() - start).toFixed(2)}ms`)
-  }
+  perfLog('generate:frontmatter', app.env.isDebug)
 }
 
 export async function watchAutoFrontmatter(app: App, watchers: any[]) {
