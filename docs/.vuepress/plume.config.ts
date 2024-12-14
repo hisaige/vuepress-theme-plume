@@ -16,9 +16,8 @@ export default defineThemeConfig({
 
   social: [
     { icon: 'github', link: 'https://github.com' },
-    { icon: 'qq', link: 'https://qm.qq.com/q/FbPPoOIscE' },
   ],
-  navbarSocialInclude: ['github', 'qq'],
+  navbarSocialInclude: ['github'],
 
   footer: {
     message: 'Powered by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
