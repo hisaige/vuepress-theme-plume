@@ -39,7 +39,7 @@ blog:
     logo: https://www.dingyuqi.com/icon/icon.ico
     url: https://dingyuqi.com
     repo: https://github.com/dingyuqi
-    preview: /images/demos/dingyuqi.com.jpg
+    preview: https://www.dingyuqi.com/back-ground/site-home-page.png
   -
     name: 屠永涛
     desc: 大脑中走得越远，现实中走得越稳！
@@ -61,6 +61,20 @@ blog:
     url: https://ixyz.org
     repo: https://github.com/ixyzorg
     preview: /images/demos/ixyz.org.jpg
+  -
+    name: AJohn
+    desc: Never, ever, ever give up
+    logo: https://cdn.jsdelivr.net/gh/zzyAJohn/Image/blog-favicon.png
+    url: https://ajohn.top/
+    repo: https://github.com/zzyAJohn
+    preview: https://cdn.jsdelivr.net/gh/zzyAJohn/Image/blog-preview.png
+  -
+    name: Jiawei Wang
+    desc: PLUS & WAVE!
+    logo: https://plus-wave.github.io/icon/wave+.png
+    url: https://plus-wave.github.io
+    repo: https://github.com/PLUS-WAVE
+    preview: https://raw.githubusercontent.com/PLUS-WAVE/blog-image/master/img/blog/2024-11-24/plus-wave.github.io.jpg
 ---
 
 :::important

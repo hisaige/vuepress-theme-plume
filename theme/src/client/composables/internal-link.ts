@@ -2,7 +2,7 @@ import type { PresetLocale } from '../../shared/index.js'
 import { computed } from 'vue'
 import { useRouteLocale } from 'vuepress/client'
 import { useData } from './data.js'
-import { getPresetLocaleData } from './preset-locales.js'
+import { useThemeData } from './theme-data.js'
 
 export interface InternalLink {
   text: string
@@ -10,35 +10,34 @@ export interface InternalLink {
 }
 
 export function useInternalLink() {
-  const { theme } = useData()
+  const { blog, theme } = useData()
+  const themeData = useThemeData()
   const routeLocale = useRouteLocale()
 
   function resolveLink(name: keyof PresetLocale, link: string): InternalLink {
     return {
       link: (routeLocale.value + link).replace(/\/+/g, '/'),
-      text: getPresetLocaleData(routeLocale.value, name),
+      text: theme.value[`${name}Text`] || themeData.value[`${name}Text`],
     }
   }
 
-  const blogData = computed(() => theme.value.blog || {})
-
   const home = computed(() => resolveLink('home', '/'))
-  const blog = computed(() => blogData.value.postList !== false
-    ? resolveLink('blog', blogData.value.link || 'blog/')
+  const blogLink = computed(() => blog.value.postList !== false
+    ? resolveLink('blog', blog.value.link || 'blog/')
     : home.value)
-  const tags = computed(() => blogData.value.tags !== false
-    ? resolveLink('tag', blogData.value.tagsLink || 'blog/tags/')
+  const tags = computed(() => blog.value.tags !== false
+    ? resolveLink('tag', blog.value.tagsLink || 'blog/tags/')
     : undefined)
-  const archive = computed(() => blogData.value.archives !== false
-    ? resolveLink('archive', blogData.value.archivesLink || 'blog/archives/')
+  const archive = computed(() => blog.value.archives !== false
+    ? resolveLink('archive', blog.value.archivesLink || 'blog/archives/')
     : undefined)
-  const categories = computed(() => blogData.value.categories !== false
-    ? resolveLink('category', blogData.value.categoriesLink || 'blog/categories/')
+  const categories = computed(() => blog.value.categories !== false
+    ? resolveLink('category', blog.value.categoriesLink || 'blog/categories/')
     : undefined)
 
   return {
     home,
-    blog,
+    blog: blogLink,
     tags,
     archive,
     categories,

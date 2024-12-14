@@ -1,5 +1,5 @@
-/** 法语 */
 import type { DocSearchLocaleOptions } from '@vuepress/plugin-docsearch'
+/** 法语 */
 import type { SearchLocaleOptions } from '@vuepress-plume/plugin-search'
 import type { PlumeThemeLocaleData, PresetLocale } from '../../shared/index.js'
 
@@ -37,6 +37,13 @@ export const frLocale: PlumeThemeLocaleData = {
     linkText: 'Retour à l\'accueil',
   },
 
+  homeText: 'Accueil',
+  blogText: 'Blog',
+  tagText: 'Étiquette',
+  archiveText: 'Archives',
+  categoryText: 'Catégorie',
+  archiveTotalText: '{count} articles',
+
   encryptButtonText: 'Confirmer',
   encryptPlaceholder: 'Veuillez entrer le mot de passe',
   encryptGlobalText: 'Ce site n\'est accessible qu\'avec un mot de passe',
@@ -49,13 +56,6 @@ export const frLocale: PlumeThemeLocaleData = {
 }
 
 export const frPresetLocale: PresetLocale = {
-  'home': 'Accueil',
-  'blog': 'Blog',
-  'tag': 'Étiquette',
-  'archive': 'Archives',
-  'category': 'Catégorie',
-  'archiveTotal': '{count} articles',
-
   // ------ copyright license ------
   'CC0': 'CC0 1.0 Universel',
   'CC-BY-4.0': 'Attribution 4.0 International',

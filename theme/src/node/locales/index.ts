@@ -1,9 +1,9 @@
+import type { DocSearchLocaleOptions } from '@vuepress/plugin-docsearch'
 /**
  * 多语言预设
  * 除 /zh/ 、 /en/ 外，其它语言预设通过 AI 生成，不保证准确
  * 如有错误，欢迎提 issue
  */
-import type { DocSearchLocaleOptions } from '@vuepress/plugin-docsearch'
 import type { SearchLocaleOptions } from '@vuepress-plume/plugin-search'
 import type { PlumeThemeLocaleData, PresetLocale } from '../../shared/index.js'
 import { deDocsearchLocale, deLocale, dePresetLocale, deSearchLocale } from './de.js'
